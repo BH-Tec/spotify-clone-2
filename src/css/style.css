@@ -166,3 +166,43 @@ body {
     padding: .5rem;
     border-radius: 1.25rem;
 }
+
+/* Footer */
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #101926, #2bdefd);
+    padding: .9375rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .75rem;
+    margin-bottom: .625rem;
+}
+
+.disclaimer-premium .premium__subtitle {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.disclaimer-premium .button{
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .875rem 1.875rem;
+    border: 0rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
