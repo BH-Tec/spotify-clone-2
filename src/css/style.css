@@ -4,6 +4,7 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
+/* Menu Lateral */
 .sidebar {
     position: fixed;
     top: 0;
@@ -35,11 +36,11 @@ body {
     padding: 0 1.25rem .625rem 1.25rem;
 }
 
-.sidebar ul li{
+.sidebar ul li {
     padding: .625rem 0;
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
@@ -88,4 +89,80 @@ body {
 
 .library .library__content .fa-plus {
     margin: 1.5rem .625rem;
+}
+
+.library .section-playlist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: .875rem;
+    margin: .5rem 0rem;
+    padding: 1rem 1.25rem;
+    border-radius: .625rem;
+}
+
+.library .section-playlist .section-playlist__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.library .section-playlist .section-playlist__content .text {
+    padding-bottom: .875rem;
+}
+
+.library .section-playlist .section-playlist__content .title {
+    font-weight: 700;
+}
+
+.library .section-playlist .section-playlist__content .subtitle {
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.library .section-playlist .section-playlist__content .section-playlist__button {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 1.25rem;
+    font-size: .75rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: none;
+    padding: .625rem;
+    margin-top: .75rem;
+    border: 0rem;
+    width: 7.0625rem;
+}
+
+.library .cookies {
+    margin: 1.5625rem 1.25rem;
+}
+
+.library .cookies a {
+    color: #b3b3b3;
+    font-size: .625rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.library .cookies a:hover {
+    text-decoration: underline;
+}
+
+.library .languages__button {
+    align-items: center;
+    background-color: transparent;
+    border: .0625rem solid #878787;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 10.625rem;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 1.25rem;
 }
