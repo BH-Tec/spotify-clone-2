@@ -1,6 +1,7 @@
 body {
     background-color: #000;
     color: #fff;
+    font-family: "DM Sans", sans-serif;
 }
 
 .sidebar {
@@ -43,5 +44,48 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: .875rem;
-    font-family: "DM Sans", sans-serif;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: .25rem .5rem;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-top: .625rem;
+}
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button {
+    display: flex;
+    margin-right: .625rem;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0rem;
+    font-size: .875rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 1.25rem .625rem;
+}
+
+.library .library__button .fa-solid {
+    font-size: 1.25rem;
+    /* font-weight: 300; */
+    color: #b3b3b3;
+    margin-right: .625rem;
+    padding-right: .5rem;
+}
+
+.library .library__content .fa-plus {
+    margin: 1.5rem .625rem;
 }
