@@ -1,7 +1,13 @@
+:root {
+    --font-dm-sans: "DM Sans", sans-serif;
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0, 0, 0, 7)
+}
+
 body {
     background-color: #000;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-dm-sans);
 }
 
 /* Menu Lateral */
@@ -167,6 +173,98 @@ body {
     border-radius: 1.25rem;
 }
 
+/* Header */
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 20rem;
+    margin-right: 3.5rem;
+}
+
+.main-container .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: .625rem;
+    border-radius: .5rem;
+    background-color: #121212;
+}
+
+.main-container .header__navigation .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-container .header__navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.header__navigation .header__search {
+    display: flex;
+    align-items: center;
+    width: 22.75rem;
+    height: 3rem;
+    margin-left: .5rem;
+    background-color: #242424;
+    border-radius: 31.25rem;
+    border: 1px solid transparent;
+}
+
+.header__navigation .header__search img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: .625rem;
+}
+
+.header__navigation .header__search input {
+    background: transparent;
+    border: none;
+    padding: 0rem 6.25rem 0 .75rem;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header__navigation .header__login {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation .header__login .subscribe {
+    color: #a7a7a7;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 2rem;
+}
+
+.header__navigation .header__login .login {
+    width: 6.25rem;
+    height: 3rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2.5rem;
+}
+
 /* Footer */
 .disclaimer-premium {
     position: fixed;
@@ -195,7 +293,7 @@ body {
     font-weight: 500;
 }
 
-.disclaimer-premium .button{
+.disclaimer-premium .button {
     background-color: #fff;
     color: #000;
     font-size: 1rem;
